@@ -2,7 +2,10 @@ import java.util.*;
 
 public class Input {
     public static void main (String args[]){
-        Scanner sc = new Scanner(System.in );
+        try (Scanner sc = new Scanner(System.in )) {
+            Float price = sc.nextFloat();
+            System.out.println(price);
+        }
 
         // WE USE next TO TAKE INPUT OF  A SINGLE WORD //                        
 
@@ -24,8 +27,6 @@ public class Input {
 
         //  WE USE nextInt TO TAKE INPUT OF A DECIMAL NUMBERS //  AND SO ON //
 
-        Float price = sc.nextFloat();
-        System.out.println(price);
 
 
 
